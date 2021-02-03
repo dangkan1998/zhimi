@@ -7,62 +7,66 @@ body{
 }
 /* 头部 */
 header{
-    height:0.46rem;
-    background:#42c494;
-}
-header .div{
-    width:3.2rem;
-    height:0.46rem;
-    margin:0 auto;
+    width:100%;
+    height:0.56rem;
+    background:#fff;
     display:flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-around;
+}
+header li{
+    height:0.56rem;
+    line-height:0.56rem;
     font-size:0.18rem;
-    color:#fff;
+    color:#000;
+}
+header li:hover{
+    height:0.53rem;
+    color:#000;
+    border-bottom:0.03rem solid #46bf96;
 }
 /* 主体 */
 main{
     width:100%;
     flex:1;
     overflow:auto;
-    background:#f3f7fa;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    border-top:1px solid #c7c7c7;
+    position: relative;
 }
-main .img{
-    height:1.78rem;
-    margin-bottom:0.07rem;
-}
-main .img img{
-    width:3.75rem;
-    height:1.78rem;
-}
-main .matter{
-    height:1.13rem;
-    background:#fff;
-    margin-bottom:0.07rem;
+main .refe{
+    width:100%;
+    height:0.56rem;
     display:flex;
     justify-content: space-around;
     align-items: center;
 }
-main .matter div{
-    width:2.55rem;
-    height:1.13rem;
-    display:flex;
-    flex-direction: column;
-    justify-content: space-around;
+main .refe span{
+    width:0.65rem;
+    height:0.16rem;
+    padding:0.08rem;
+    font-size:0.15rem;
+    color:#5c6063;
+    background:#f3f7fa;
+    text-align:center;
+    line-height:0.2rem;
+    border-radius: 0.16rem;
 }
-main .matter h2{
-    font-size:0.18rem;
-    font-weight: normal;
-    color:#888;
+main .refe span:hover{
+    color:#fff;
+    background:#42c494;
 }
-main .matter h3{
-    font-size:0.14rem;
-    font-weight: normal;
-    color:#a0a0a0;
+main .div{
+    width:3.4rem;
+    margin:0 auto;
+    overflow: auto;
 }
-main .matter img{
-    width:0.8rem;
-    height:0.7rem;
+main .book{
+    width:100%;
+    height:1.4rem;
+    background:red;
+    border: 1px solid #ccc;
 }
 /* 底部 */
 footer{
