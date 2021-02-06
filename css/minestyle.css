@@ -8,16 +8,38 @@ body{
 /* 头部 */
 header{
     width:100%;
-    height:0.56rem;
+    height:1.12rem;
     background:#42c494;
     display:flex;
     justify-content: space-around;
 }
 header li{
-    height:0.56rem;
-    line-height:0.56rem;
+    height:1.12rem;
     font-size:0.2rem;
     color:#fff;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+header li strong{
+    font-size:0.12rem;
+}
+header li strong b{
+    background:#fcff9f;
+    color:#42c494;
+    padding-left:0.02rem;
+    padding-right:0.02rem;
+    border-radius: 0.04rem;
+}
+header li img{
+    width:0.8rem;
+    height:0.8rem;
+    border-radius: 50%;
+}
+header li .username{
+    font-size:0.22rem;
+    color:#000;
 }
 /* 主体 */
 main{
@@ -30,61 +52,24 @@ main{
     border-top:1px solid #c7c7c7;
     position: relative;
 }
-main .refe{
-    width:100%;
-    height:2.64rem;
-    display:flex;
-    flex-direction: column; 
-    justify-content: space-around;
-    align-items: center;
-}
-main .refe img{
-    width:3.75rem;
-    height:1.78rem;
-}
-main .refe h2{
-    width:3.75rem;
-    height:0.86rem;
-    display:flex;
-    justify-content: space-around;
-    align-items: center;
-}
-main .refe h2 div{
-    width:1rem;
-    height:0.66rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-}
-main .refe h2 div i{
-    font-size:0.36rem;
-    color:#42c494;
-}
-main .refe h2 div span{
-    font-size:0.17rem;
-    color:#333;
-}
 main .div{
     width:3.4rem;
     margin:0 auto;
     overflow: auto;
     background:#f3f7fa;
 }
-main .div .inf{
+main .div .zhimi{
     width:100%;
     height:0.4rem;
     background:#fff;
     display:flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
 }
-main .div .inf span{
-    font-size:0.18rem;
-    color:#777;
-}
-main .div .inf span em{
-    color:#000;
+main .div .zhimi span{
+    font-size:0.17rem;
+    color:#333;
+    margin-left:0.1rem;
 }
 main .div .shop{
     width:100%;
@@ -100,12 +85,20 @@ main .div .shop span{
     color:#333;
     margin-left:0.1rem;
 }
-main .div .plan{
-    margin-top:0.1rem;
+main .div .inf{
+    width:100%;
+    height:0.4rem;
+    background:#fff;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
 }
-main .div .plan img{
-    width:3.54rem;
-    height:1.54rem;
+main .div .inf span{
+    font-size:0.14rem;
+    color:#777;
+}
+main .div .inf span em{
+    color:#36b08b;
 }
 /* 底部 */
 footer{
